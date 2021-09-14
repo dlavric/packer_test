@@ -27,7 +27,7 @@ Pre-requisites:
 ```shell
 packer init
 ```
-and
+   and
 ```shell
 packer build
 ```
