@@ -8,7 +8,7 @@ packer {
 }
 
 source "amazon-ebs" "ubuntu" {
-  ami_name      = "learn-packer-linux-aws"
+  ami_name      = "learn-packer-linux-aws-jmg"
   instance_type = "t2.micro"
   region        = "us-west-2"
   source_ami_filter {
@@ -28,4 +28,12 @@ build {
   sources = [
     "source.amazon-ebs.ubuntu"
   ]
+  provisioner "shell" {
+    inline = [
+        "echo Installing Nginx",
+        "sleep 30",
+        "sudo apt-get update",
+        "sudo apt-get install -y nginx",
+    ]
+  }
 }
