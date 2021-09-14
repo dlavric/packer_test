@@ -15,12 +15,21 @@ Pre-requisites:
 ## How to Use the Repo
 - Clone this repo:
 ```shell
-$ git clone git@github.com:dlavric/packer-base.git
+ git clone git@github.com:dlavric/packer-base.git
 ```
 
 - Go to the directory where the repo is stored
 ```shell
-$ cd packer-base
+ cd packer-base
 ```
 
-To build the image, simply run `packer init .` and `packer build .`. Since this is using a base AMI from AWS, it will require AWS access to pull the generic AMI as well as build the new AMI and push it.
+- To build the image simply run
+```shell
+packer init
+```
+and
+```shell
+packer build
+```
+
+Since this is using a base AMI from AWS, it will require AWS access to pull the generic AMI as well as build the new AMI and push it.
