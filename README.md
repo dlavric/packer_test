@@ -15,12 +15,12 @@ Pre-requisites:
 ## How to Use the Repo
 - Clone this repo:
 ```shell
- git clone git@github.com:dlavric/packer-base.git
+ git clone git@github.com:JMGoldsmith/packer_test.git
 ```
 
 - Go to the directory where the repo is stored
 ```shell
- cd packer-base
+ cd packer-test
 ```
 
 - To build the image simply run
