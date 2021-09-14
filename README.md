@@ -20,7 +20,7 @@ Pre-requisites:
 
 - Go to the directory where the repo is stored
 ```shell
- cd packer-test
+ cd packer_test
 ```
 
 - To build the image simply run
